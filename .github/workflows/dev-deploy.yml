@@ -1,0 +1,17 @@
+name: deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    name: Run Workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@master
+      - name: Install aws-sam-cli
+        run: date
+        with:
+          secret: ${{ secrets.TESTSECRET }}
