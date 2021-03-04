@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@master
       - name: Install aws-sam-cli
         run: date
-        with:
-          secret: ${{ secrets.TESTSECRET }}
+    env: # Or as an environment variable
+      super_secret: ${{ secrets.TESTSECRET }}
