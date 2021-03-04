@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Clone Repository
         uses: actions/checkout@master
-      - name: Install aws-sam-cli
+      - name: Generic Run Command
         run: date
     env: # Or as an environment variable
       super_secret: ${{ secrets.TESTSECRET }}
