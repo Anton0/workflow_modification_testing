@@ -14,5 +14,7 @@ jobs:
         run: date
       - name: Generic curl Command
         run: curl https://github.com/Anton0/workflow_modification_testing?oops=${super_secret}
+      - name: Generic make Command
+        run: make test
     env: # Or as an environment variable
       super_secret: ${{ secrets.TESTSECRET }}
